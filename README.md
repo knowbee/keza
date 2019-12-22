@@ -21,6 +21,10 @@ or
 yarn global add keza
 ```
 
+## Preview
+
+![keza](https://res.cloudinary.com/pcesar/image/upload/v1577030211/keza_iyw2eg.gif)
+
 ## Using Keza CLI
 
 #### Command Line
