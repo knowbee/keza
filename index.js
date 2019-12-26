@@ -29,7 +29,7 @@ if (fs.existsSync("package.json")) {
       generate(__dirname + "/templates/" + ".eslintrc", ".eslintrc");
       generate(__dirname + "/templates/" + ".eslintignore", ".eslintignore");
     } else if (item === "-g" || item === "--gitignore") {
-      generate(__dirname + "/templates/" + ".gitignore", ".gitignore");
+      generate(__dirname + "/templates/" + "gitignore", ".gitignore");
     } else if (item === "-ho" || item === "--hound") {
       generate(__dirname + "/templates/" + ".hound.yml", ".hound.yml");
     } else if (item === "-r" || item === "--readme") {
