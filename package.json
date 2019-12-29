@@ -1,6 +1,6 @@
 {
   "name": "keza",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate nodejs CI template files, Eslint config files, gitignore and readme file from the command line when keza's CLI is installed globally",
   "main": "index.js",
   "bin": {

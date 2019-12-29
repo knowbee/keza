@@ -18,7 +18,6 @@ const progress = new bar.SingleBar({
 
 if (fs.existsSync("package.json")) {
   helper();
-  keza.parse(process.argv);
   process.argv.slice(2).forEach(function(item) {
     if (item === "-b" || item === "--babel") {
       generate(__dirname + "/templates/" + ".babelrc", ".babelrc");
@@ -63,7 +62,6 @@ if (fs.existsSync("package.json")) {
   }
 } else {
   helper();
-  keza.parse(process.argv);
   console.log(
     chalk.magenta("You have to initialize your project with npm or yarn first")
   );
@@ -72,7 +70,7 @@ if (fs.existsSync("package.json")) {
 }
 function helper() {
   keza
-    .version("1.0.0")
+    .version("1.0.1")
     .option("-b, --babel", "generate babelrc")
     .option("-d, --docker", "generate docker file")
     .option("-e, --eslint", "generate eslintrc and eslintignore")
@@ -80,7 +78,8 @@ function helper() {
     .option("-ho, --hound", "generate hound file")
     .option("-r, --readme", "generate readme file")
     .option("-s, --sequelize", "generate sequerizerc")
-    .option("-t, --travis", "generate travis");
+    .option("-t, --travis", "generate travis")
+    .parse(process.argv);
   keza.on("--help", function() {
     console.log("Examples:");
     console.log("  $ keza --help");
