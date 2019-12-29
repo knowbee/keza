@@ -70,7 +70,7 @@ if (fs.existsSync("package.json")) {
 }
 function helper() {
   keza
-    .version("1.0.1")
+    .version("1.0.2")
     .option("-b, --babel", "generate babelrc")
     .option("-d, --docker", "generate docker file")
     .option("-e, --eslint", "generate eslintrc and eslintignore")

@@ -1,7 +1,5 @@
 .npmignore
-.eslintignore
 CONTRIBUTING.md
-.eslintrc
 CONTRIBUTOR_COVENANT.md
 .travis.yml
 test/
