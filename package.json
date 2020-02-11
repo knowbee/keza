@@ -12,14 +12,12 @@
     "test": "nyc mocha ./test/* --exit",
     "fix-lint": "eslint . --fix"
   },
-  "dependencies": {
+  "devDependencies": {
     "chalk": "^3.0.0",
     "clear": "^0.1.0",
     "cli-progress": "^3.4.0",
     "commander": "^4.0.1",
-    "figlet": "^1.2.4"
-  },
-  "devDependencies": {
+    "figlet": "^1.2.4",
     "chai": "^4.2.0",
     "coveralls": "3.0.9",
     "eslint": ">=6.7.2",
