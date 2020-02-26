@@ -13,11 +13,6 @@
     "fix-lint": "eslint . --fix"
   },
   "devDependencies": {
-    "chalk": "^3.0.0",
-    "clear": "^0.1.0",
-    "cli-progress": "^3.4.0",
-    "commander": "^4.0.1",
-    "figlet": "^1.2.4",
     "chai": "^4.2.0",
     "coveralls": "3.0.9",
     "eslint": ">=6.7.2",
@@ -25,6 +20,13 @@
     "eslint-plugin-import": "2.18.2",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "cli-progress": "^3.4.0",
+    "commander": "^4.0.1",
+    "figlet": "^1.2.4"
   },
   "repository": {
     "type": "git",
