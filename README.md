@@ -27,6 +27,22 @@ yarn global add keza
     <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/keza.PNG" width="400px" height="auto" hspace="10"/>
 </p>
 
+## Supported template files
+
+| Template file
+| ------------ |--
+| ✔ .babelrc |  
+| ✔ .travis.yml |
+| ✔ .dockerignore |  
+| ✔ .eslintignore |  
+| ✔ .eslintrc |
+| ✔ .hound.yml |
+| ✔ .sequerizerc |
+| ✔ Dockerfile |  
+| ✔ Procfile |
+| ✔ README.md |
+|
+
 ## Using Keza CLI
 
 #### Command Line
@@ -44,6 +60,7 @@ $ keza
 Please before making a PR, read first this [Contributing Guideline](./CONTRIBUTING.md)
 
 ## License
+
 MIT License
 
 Copyright (c) 2020 Igwaneza Bruce <knowbeeinc@gmail.com>
