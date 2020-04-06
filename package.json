@@ -1,6 +1,6 @@
 {
   "name": "keza",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generate template files(Eslint config files, gitignore, readme..etc) from the command line",
   "main": "index.js",
   "bin": {
