@@ -5,12 +5,19 @@ const figlet = require("figlet");
 const inquirer = require("inquirer");
 const { templates, questions } = require("./lib/constants");
 const { helper } = require("./lib/help");
-const { generateTemplate } = require("./lib/generate")
+const { generateTemplate } = require("./lib/generate");
 const path = require("path");
-
+const bar = require("cli-progress");
+const progress = new bar.SingleBar({
+  format: "Done |" + chalk.magenta("{bar}") + "| {percentage}%",
+  barCompleteChar: "\u2588",
+  hideCursor: true,
+});
 clear();
 helper();
-console.log(chalk.magenta(figlet.textSync("Keza", { horizontalLayout: "full" })));
+console.log(
+  chalk.magenta(figlet.textSync("Keza", { horizontalLayout: "full" }))
+);
 console.log(chalk.green("generate template files very fast"));
 if (process.argv.length == 2) {
   inquirer.prompt(questions).then((answers) => {
@@ -24,8 +31,11 @@ if (process.argv.length == 2) {
         }
       });
     });
+    progress.start(choices.length);
     choices.forEach((choice) => {
       generateTemplate(choice, path.basename(choice));
     });
+    progress.update(100);
+    progress.stop();
   });
 }
