@@ -1,7 +1,7 @@
 {
   "name": "keza",
-  "version": "1.0.5",
-  "description": "Generate nodejs CI template files, Eslint config files, gitignore and readme file from the command line when keza's CLI is installed globally",
+  "version": "1.0.7",
+  "description": "Generate template files(Eslint config files, gitignore, readme..etc) from the command line",
   "main": "index.js",
   "bin": {
     "keza": "./index.js"
@@ -12,17 +12,16 @@
     "fix-lint": "eslint . --fix"
   },
   "devDependencies": {
-    "eslint": ">=6.7.2",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "nyc": "^14.1.1"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "clear": "^0.1.0",
-    "cli-progress": "^3.4.0",
-    "commander": "^4.0.1",
-    "figlet": "^1.2.4",
+    "cli-progress": "^3.6.1",
+    "commander": "^5.0.0",
+    "figlet": "^1.3.0",
     "inquirer": "^7.1.0",
     "ora": "^4.0.3"
   },
