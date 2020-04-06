@@ -7,7 +7,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Generate nodejs CI template files, Eslint config files, gitignore, docker and readme file from the command line when keza's CLI is installed globally
+Generate template files(babelrc, eslint, readme, etc...) from the command line
 
 ## Install
 
@@ -23,36 +23,45 @@ yarn global add keza
 
 ## Preview
 
-![keza](https://res.cloudinary.com/pcesar/image/upload/v1577030211/keza_iyw2eg.gif)
+<p>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/keza.PNG" width="400px" height="auto" hspace="10"/>
+</p>
 
 ## Using Keza CLI
 
 #### Command Line
 
 ```cli
-$ keza <options>
+$ keza
 ```
 
 ## Options:
 
-- `-h` or `--help`: display helper screen.
-- `-b` or `--babel`: generate .babelrc.
-- `-d` or `--docker`: generate docker file.
-- `-e` or `--eslint`: generate .eslintrc and .eslintignore file.
-- `-g` or `--gitignore`: generate nodejs .gitignore.
-- `-ho` or `--hound`: generate hound yml file.
-- `-r` or `--readme`: generate readme file.
-- `-s` or `--sequelize`: generate .sequerizerc.
-- `-t` or `--travis`: generate travis yml file.
+- `--help`: display helper screen.
 
 ## Contribution
 
-- Please before making a PR, read first this [Contributing Guideline](./CONTRIBUTING.md)
+Please before making a PR, read first this [Contributing Guideline](./CONTRIBUTING.md)
 
 ## License
+MIT License
 
-MIT
+Copyright (c) 2020 Igwaneza Bruce <knowbeeinc@gmail.com>
 
-## Author
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Igwaneza Bruce
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
