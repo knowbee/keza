@@ -6,6 +6,7 @@ const inquirer = require("inquirer");
 const { templates, questions } = require("./lib/constants");
 const { helper } = require("./lib/help");
 const { generateTemplate } = require("./lib/generate");
+const os = require("os")
 const path = require("path");
 const bar = require("cli-progress");
 const progress = new bar.SingleBar({
@@ -33,7 +34,11 @@ if (process.argv.length == 2) {
     });
     progress.start(choices.length);
     choices.forEach((choice) => {
-      generateTemplate(choice, path.basename(choice));
+      if (os.platform == "linux" || os.platform == "darwin") {
+        generateTemplate((choice.replace(/\\/g, "/")), path.basename(choice.replace(/\\/g, "/")));
+      } else {
+        generateTemplate(choice, path.basename(choice));
+      }
     });
     progress.update(100);
     progress.stop();
