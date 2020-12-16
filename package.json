@@ -1,0 +1,44 @@
+{
+  "name": "keza",
+  "version": "1.1.4",
+  "description": "Generate template files(Eslint config files, gitignore, readme..etc) from the command line",
+  "main": "index.js",
+  "bin": {
+    "keza": "./index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "exit 0",
+    "fix-lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "cli-progress": "^3.8.2",
+    "commander": "^6.2.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowbee/keza.git"
+  },
+  "keywords": [
+    "generate",
+    "generate templates",
+    "template",
+    "template files"
+  ],
+  "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knowbee/keza/issues"
+  },
+  "homepage": "https://github.com/knowbee/keza#readme"
+}

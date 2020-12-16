@@ -1,0 +1,13 @@
+[build]
+  command = "CI= npm run build"
+  publish="build"
+  base = ""
+
+[build.environment]
+  YARN_VERSION = "1.9.4"
+  YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
